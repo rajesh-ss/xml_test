@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="usedVehicle">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="vehicle">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Car" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Brand" type="xs:string"></xs:element>
+                                        <xs:element name="Type" type="xs:string"></xs:element>
+                                        <xs:element name="Model" type="xs:string"></xs:element>
+                                        <xs:element name="Year" type="year"></xs:element>
+                                        <xs:element name="ManYr" type="xs:integer"></xs:element>
+                                        <xs:element name="Mileage" type="xs:integer"></xs:element>
+                                        <xs:element name="Color" type="xs:string"></xs:element>
+                                        <xs:element name="Price" type="price"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Seller">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="person" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"></xs:element>
+                                        <xs:element name="age" type="xs:string"></xs:element>
+                                        <xs:element name="phone" type="xs:integer"></xs:element>
+                                        <xs:element name="vehID" type="xs:integer"></xs:element>
+                                        <xs:element name="city" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="year">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"></xs:minInclusive>
+            <xs:maxInclusive value="5"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="price">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="50000"></xs:minInclusive>
+            <xs:maxInclusive value="5000000"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

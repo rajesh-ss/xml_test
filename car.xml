@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="veh.xsl"?>
+<usedVehicle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="veh.xsd">
+
+	<vehicle>
+		<Car>
+			<Brand> bmw</Brand>
+			<Type> Sedan</Type>
+			<Model> M5</Model>
+			<Year>5</Year>
+			<ManYr> 2021</ManYr>
+			<Mileage>15</Mileage>
+			<Color>black</Color>
+			<Price>5000000</Price>
+		</Car>
+		<Car>
+			<Brand>Honda</Brand>
+			<Type>suv</Type>
+			<Model>WR-V</Model>
+			<Year>2</Year>
+			<ManYr>2019</ManYr>
+			<Mileage>20</Mileage>
+			<Color>black</Color>
+			<Price>1000000</Price>
+		</Car>
+		<Car>
+			<Brand> Honda</Brand>
+			<Type> Sedan</Type>
+			<Model> verna</Model>
+			<Year>5</Year>
+			<ManYr> 2017</ManYr>
+			<Mileage>10</Mileage>
+			<Color>white</Color>
+			<Price>700000</Price>
+		</Car>
+		<Car>
+			<Brand> bmw</Brand>
+			<Type> Sedan</Type>
+			<Model> 745Le</Model>
+			<Year>2</Year>
+			<ManYr> 2020</ManYr>
+			<Mileage>8</Mileage>
+			<Color>red</Color>
+			<Price>4500000</Price>
+		</Car>
+		<Car>
+			<Brand> maruthi</Brand>
+			<Type> hatchback</Type>
+			<Model> 800</Model>
+			<Year>1</Year>
+			<ManYr>2010</ManYr>
+			<Mileage>14</Mileage>
+			<Color>red</Color>
+			<Price>55000</Price>
+		</Car>
+
+	</vehicle>
+
+	<Seller>
+		<person>
+			<name>Rajesh</name>
+			<age>23</age>
+			<phone>4569871235</phone>
+			<vehID>03</vehID>
+			<city>bangalore</city>
+		</person>
+		<person>
+			<name>vinay</name>
+			<age>24</age>
+			<phone>7565841235</phone>
+			<vehID>05</vehID>
+			<city>chennai</city>
+		</person>
+		<person>
+			<name>santhosh</name>
+			<age>21</age>
+			<phone>9565841235</phone>
+			<vehID>06</vehID>
+			<city>chennai</city>
+		</person>
+		<person>
+			<name>Tom</name>
+			<age>26</age>
+			<phone>8565841335</phone>
+			<vehID>12</vehID>
+			<city>bangalore</city>
+		</person>
+
+	</Seller>
+
+</usedVehicle>
